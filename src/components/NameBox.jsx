@@ -7,6 +7,10 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { purple } from "@mui/material/colors";
 
+const resume_link = process.env.REACT_APP_RESUME_LINK;
+const github_link = process.env.REACT_APP_GITHUB_LINK;
+const linkedin_link = process.env.REACT_APP_LINKEDIN_LINK;
+
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(purple[500]),
   backgroundColor: purple[500],
@@ -44,12 +48,43 @@ export default function nameBox() {
         >
           <h2>Nick Yozov</h2>
           <p>A Web Developer</p>
-          <Grid container spacing={1} style={{ justifyContent: "center" }}>
-            <ColorButton variant="contained">My Resume</ColorButton>
-            <GitHubIcon />
+          <Grid
+            container
+            sx={{ alignItems: "center", justifyContent: "center" }}
+            spacing={1}
+          >
+            <Grid item>
+              <a target="_blank" href={resume_link}>
+                <ColorButton variant="contained">My Resume</ColorButton>
+              </a>
+            </Grid>
 
-            <LinkedInIcon />
-
+            <Grid item>
+              <a target="_blank" href={github_link}>
+                <GitHubIcon
+                  sx={{
+                    width: 32,
+                    height: 32,
+                    "&:hover": {
+                      color: "rgba(255, 255, 255, 0.4)",
+                    },
+                  }}
+                />
+              </a>
+            </Grid>
+            <Grid item>
+              <a target="_blank" href={linkedin_link}>
+                <LinkedInIcon
+                  sx={{
+                    width: 35,
+                    height: 35,
+                    "&:hover": {
+                      color: "rgba(255, 255, 255, 0.4)",
+                    },
+                  }}
+                />
+              </a>
+            </Grid>
           </Grid>
         </Box>
       </div>
