@@ -8,15 +8,10 @@ export default function aboutMe() {
     height: 500,
     color: 'white',
     backgroundColor: 'rgba(0,0,30,0.4)',
-    backdropFilter: 'blur(5px)',
     p: 5,
-    marginLeft: 5,
+    position:'relative',
+    left: 5,
     borderRadius: 2,
-    '&:hover': {
-      backgroundColor: 'primary.main',
-      opacity: [0.9, 0.8, 0.7],
-     
-    },
   }}>
         <h2>About Me</h2>
         <p>
