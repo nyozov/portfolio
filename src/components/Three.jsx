@@ -1,11 +1,9 @@
 import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber'
-import Desk from './Desk'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Suspense } from 'react'
 import '../index.css'
-import Isolation from './Isolation'
-import NewDesk from './NewDesk'
+
 import Lowpoly from './Lowpoly'
 export default function ModelThree () {
 

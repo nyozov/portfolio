@@ -12,6 +12,7 @@ import { shadows } from "@mui/system";
 import { makeStyles, withStyles } from "@mui/styles";
 import ColorButton from "./TealButton";
 import ModelThree from "./Three";
+import '../components/glitch.scss'
 
 
 
@@ -77,7 +78,7 @@ export default function nameBox() {
             </CustomColor>
           </Grid>
           <Grid item xs={8} marginTop='-25px' marginBottom='25px'>
-          <p textAlign='left'>Full Stack Web Developer</p>
+          <p className='glitch' textAlign='left'>Full Stack Web Developer</p>
           </Grid>
           </Grid>
           <Grid
