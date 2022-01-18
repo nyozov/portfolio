@@ -7,7 +7,9 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import ProjectsTitle from './components/ProjectsTitle';
+import Navbar from './components/Navbar'
 import './components/projects.css'
+
 
 function App() {
   useEffect(()=> {
@@ -15,8 +17,9 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <Navbar/>
    <NameBox/>
-   <AboutMe/>
+
    <ProjectsTitle/>
    
    <MyProjects/>

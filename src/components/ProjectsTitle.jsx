@@ -3,14 +3,15 @@ import { Typography } from "@mui/material"
 
 export default function ProjectsTitle() {
   return (
-    <div>
+    <div >
     <Typography
     marginTop="25px"
     fontFamily="NeueMachina"
     variant="h4"
     color="white"
+    textAlign='center'
   >
-    My Projects
+    Latest Projects
   </Typography>
   </div>
   )

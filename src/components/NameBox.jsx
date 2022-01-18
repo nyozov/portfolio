@@ -11,6 +11,9 @@ import { Typography } from "@mui/material";
 import { shadows } from "@mui/system";
 import { makeStyles, withStyles } from "@mui/styles";
 import ColorButton from "./TealButton";
+import ModelThree from "./Three";
+
+
 
 
 const resume_link = process.env.REACT_APP_RESUME_LINK;
@@ -37,36 +40,44 @@ export default function nameBox() {
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+         
           minHeight: "100vh",
         }}
       >
         <Box
-          sx={{
-            width: 400,
-            height: 200,
+          sx={{ 
+            width: '80%',
+            height: '90vh',
+            position: 'absolute',
+            top: '0',
+
+            
             color: "white",
             backgroundColor: "rgba(0,0,30,0.4)",
-            p: 5,
-            marginLeft: "-30%",
-            borderRadius: 2,
-            textAlign:'center'
+            p: 10,
+            
+            borderBottomRightRadius:'10px',
+            borderBottomLeftRadius: '10px',
+            textAlign:'center',
+            
             // "&:hover": {
             //   backgroundColor: "primary.main",
             //   opacity: [0.9, 0.8, 0.7],
             // },
           }}
         >
+          
+          <Box marginTop='50px'>
           <Grid container justifyContent='center' spacing={0}>
             <Grid item xs={8}>
           <CustomColor>
-            <Typography fontFamily='NeueMachina' gutterBottom variant='h4' fontWeight="750">
+            <Typography fontFamily='NeueMachina' gutterBottom variant='h3' fontWeight="750">
             Nick Yozov
             </Typography>
             </CustomColor>
           </Grid>
           <Grid item xs={8} marginTop='-25px' marginBottom='25px'>
-          <p>A Web Developer</p>
+          <p textAlign='left'>Full Stack Web Developer</p>
           </Grid>
           </Grid>
           <Grid
@@ -107,7 +118,11 @@ export default function nameBox() {
               </a>
             </Grid>
           </Grid>
+          </Box>
+          <ModelThree/>
         </Box>
+        
+      
       </div>
     </div>
   );
