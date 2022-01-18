@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import '../index.css'
 import LogoDevIcon from '@mui/icons-material/LogoDev';
 import { withStyles, makeStyles } from '@mui/styles';
+import { Link } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({}));
 const CustomColor = withStyles({
@@ -50,14 +51,23 @@ export default function ButtonAppBar() {
         }}
        elevation={0} className='nav1' >
         <Toolbar sx={{justifyContent:'right'}}>
-         
+      
           <Button  color="inherit">
+          <Link 
+        activeClass="active"
+         className="test1"
+          to="scrollprojects"
+           spy={true}
+            smooth={true}
+             duration={500} >
           <CustomColor>
             <Typography fontFamily='NeueMachina'>
               Projects
               </Typography>
               </CustomColor>
+              </Link>
               </Button>
+              
               <Button  color="inherit">
                 <CustomColor>
             <Typography fontFamily='NeueMachina'>

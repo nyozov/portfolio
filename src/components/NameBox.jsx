@@ -13,6 +13,7 @@ import { makeStyles, withStyles } from "@mui/styles";
 import ColorButton from "./TealButton";
 import ModelThree from "./Three";
 import '../components/glitch.scss'
+import '../index.css'
 
 
 
@@ -51,6 +52,7 @@ export default function nameBox() {
             height: '90vh',
             position: 'absolute',
             top: '0',
+            padding:'0',
 
             
             color: "white",
