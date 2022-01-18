@@ -6,6 +6,8 @@ import MyProjects from './components/MyProjects';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
+import ProjectsTitle from './components/ProjectsTitle';
+import './components/projects.css'
 
 function App() {
   useEffect(()=> {
@@ -15,7 +17,10 @@ function App() {
     <div className="App">
    <NameBox/>
    <AboutMe/>
+   <ProjectsTitle/>
+   
    <MyProjects/>
+  
    <Scroll/>
     </div>
   );
