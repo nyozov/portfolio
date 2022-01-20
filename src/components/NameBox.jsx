@@ -1,14 +1,8 @@
-import Box from "@mui/material/Box";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Grid from "@mui/material/Grid";
 
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import { teal } from "@mui/material/colors";
-import { withTheme } from "@emotion/react";
-import { Typography } from "@mui/material";
-import { shadows } from "@mui/system";
+import { Typography, Grid, Box } from "@mui/material";
 import { makeStyles, withStyles } from "@mui/styles";
 import ColorButton from "./TealButton";
 import ModelThree from "./Three";
